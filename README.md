@@ -25,11 +25,19 @@ Mergers and Acquisitions (M&A) play a critical role in a company’s growth stra
 - Models were evaluated using Mean Squared Error (MSE) on both the training and test datasets, with k-fold cross-validation used to validate performance.
 
 ## Final Results and Conclusions
-- The **Decision Tree Regressor** provided a baseline performance with an MSE of `X` on the test set. While it offered interpretability, the model was prone to slight overfitting, especially given the small dataset size.
-- The **Random Forest Regressor** outperformed the decision tree, achieving a lower MSE of `Y`, indicating better generalization and more accurate predictions. Feature importance analysis revealed that business type and acquisition year were the most influential factors in predicting acquisition costs.
+- The **Decision Tree Regressor** showed the following performance:
+    - **Cross-Validation MSE**: `6.13e+19`
+    - **Test MSE**: `4.15e+19`
+    - Despite pre-pruning techniques, the Decision Tree model displayed high variance and struggled to generalize well. The relatively large difference between cross-validation MSE and test MSE suggests that the model might still be overfitting, especially considering the small dataset.
 
-### Conclusion
-This project demonstrates that ensemble methods like Random Forests can significantly improve prediction accuracy over single decision trees, particularly in scenarios with small datasets. The analysis also highlighted key drivers of acquisition costs for IBM, providing valuable insights for future strategic decisions.
+- The **Random Forest Regressor** outperformed the Decision Tree, with the following results:
+    - **Cross-Validation MSE**: `4.24e+19`
+    - **Test MSE**: `2.09e+19`
+    - The Random Forest model demonstrated better generalization compared to the single Decision Tree, as evidenced by the lower MSE scores. The ensemble method's ability to aggregate multiple trees reduced overfitting and improved the model’s predictive power on unseen data.
+
+### Implications
+- The significant difference in MSE between the two models highlights the advantage of using ensemble methods, especially with small datasets that are prone to overfitting. The Random Forest’s lower MSE indicates that it is more reliable for predicting acquisition costs, providing more stable and accurate estimates.
+- Although the MSE values are large, the comparison between models shows that the Random Forest model is better suited for this task, capturing the patterns in the data more effectively.
 
 ## Repository Structure
 - `acquisitions_update_2021.csv`: Contains the dataset used for the project.
