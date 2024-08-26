@@ -1,4 +1,5 @@
 # Mergers & Acquisitions: Predicting IBM Acquisition Costs Using Decision Trees & Random Forests Regressors
+Charlize Samuels
 
 ## Project Overview
 This project aims to predict the acquisition cost of IBM's M&A deals based on key factors such as country, business type, and year. By leveraging machine learning models like Decision Trees and Random Forests, the goal is to explore whether we can accurately estimate acquisition costs and understand which features have the most influence on these predictions.
