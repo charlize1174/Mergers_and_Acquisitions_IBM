@@ -1,4 +1,4 @@
- IBM M&A Acquisition Cost Prediction Using Decision Trees & Random Forests Regressors
+# IBM M&A Acquisition Cost Prediction Using Decision Trees & Random Forests Regressors
 
 ## Project Overview
 This project aims to predict the acquisition cost of IBM's M&A deals based on key factors such as country, business type, and year. By leveraging machine learning models like Decision Trees and Random Forests, the goal is to explore whether we can accurately estimate acquisition costs and understand which features have the most influence on these predictions.
@@ -32,6 +32,6 @@ Mergers and Acquisitions (M&A) play a critical role in a company’s growth stra
 This project demonstrates that ensemble methods like Random Forests can significantly improve prediction accuracy over single decision trees, particularly in scenarios with small datasets. The analysis also highlighted key drivers of acquisition costs for IBM, providing valuable insights for future strategic decisions.
 
 ## Repository Structure
-- `acquisitions_update_2021.csv/`: Contains the dataset used for the project.
-- `M&A_Tech_ML/`: Jupyter notebook with the data exploration, model development, and evaluation steps.
+- `acquisitions_update_2021.csv`: Contains the dataset used for the project.
+- `M&A_Tech_ML`: Jupyter notebook with the data exploration, model development, and evaluation steps.
 - `README.md`: This documentation file.
